@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nested-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.li-menu {
+    user-select: none;
+    cursor: default;
+    text-align: center;
+    margin-bottom: 0.6rem;
+    padding: 0.1rem;
+    background-color: #9fd3c7;
+    color: #fff;
+    border-radius: 0.5rem;
+    min-width: 100px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* smooth transition */
+
+    display: inline-block;
+    margin-right: 1rem; /* add some space between menu items */
+}
+
+li:hover {
+    transform: scale(1.05); /* scales the element up */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* adds shadow to give a lifted effect */
+}
+
+.down-icon {
+    font-size: 1rem;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+}
+
+#context-menu {
+    user-select: none;
+    z-index: 1000;
+    position: absolute;
+    width: 150px;
+    background: #373535eb;
+}
+
+#context-menu .item {
+    padding: 8px 10px;
+    font-size: 15px;
+    color: #eee;
+}
+
+#context-menu .item:hover {
+    background: #6d6c6c6b;
+    cursor: pointer;
+}
+
+#context-menu .item i {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+#context-menu hr {
+    margin: 5px 0px;
+    border-color: #3c3b3b;
+}
+
+.input-rename {
+    width: auto;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    margin: 0.1rem;
+    background: #fff;
+}
